@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
     
-    GAClientManager.shared.fetchSentiment(forText: testText) { result in
+    GAClientManager.shared.fetchAnalysis(forText: testText) { result in
       print(result.value)
     }
   }

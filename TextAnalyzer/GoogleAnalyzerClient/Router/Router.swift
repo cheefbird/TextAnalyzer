@@ -60,8 +60,10 @@ extension Router: URLRequestConvertible {
     
     do {
       let request = try URLRequest(url: path, method: method)
+      print(request)
+      print(request.httpBody)
       
-      let encoding = URLEncoding.httpBody
+      let encoding = JSONEncoding.default
       
       let encodedRequest = try encoding.encode(request, with: parameters)
       
