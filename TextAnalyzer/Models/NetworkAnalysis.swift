@@ -1,5 +1,5 @@
 //
-//  GoogleSentiment.swift
+//  NetworkAnalysis.swift
 //  TextAnalyzer
 //
 //  Created by Francis Breidenbach on 12/15/17.
@@ -8,10 +8,7 @@
 
 import Foundation
 
-struct GoogleSentiment: Sentiment {
-  var magnitude: Float
-  
-  var score: Float
-  
-  var text: String
+struct NetworkAnalysis: Analysis {
+  var overall: Sentiment
+  var sentences: [Sentiment]
 }

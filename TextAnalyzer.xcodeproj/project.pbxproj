@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0641E1B31FE483BB0072E2BF /* Sentiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641E1B21FE483BB0072E2BF /* Sentiment.swift */; };
-		0641E1B51FE485360072E2BF /* GoogleSentiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641E1B41FE485360072E2BF /* GoogleSentiment.swift */; };
+		0641E1B51FE485360072E2BF /* Analysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641E1B41FE485360072E2BF /* Analysis.swift */; };
 		0641E1B71FE486310072E2BF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641E1B61FE486310072E2BF /* Router.swift */; };
 		0641E1B91FE498590072E2BF /* Secured.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0641E1B81FE498590072E2BF /* Secured.plist */; };
 		0641E1BB1FE49DAB0072E2BF /* RouterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641E1BA1FE49DAB0072E2BF /* RouterError.swift */; };
+		0641E1BE1FE49F050072E2BF /* GAClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641E1BD1FE49F050072E2BF /* GAClientManager.swift */; };
+		0641E1C51FE4A3B80072E2BF /* NetworkAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641E1C41FE4A3B80072E2BF /* NetworkAnalysis.swift */; };
+		0641E1C71FE4A4000072E2BF /* NetworkSentiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641E1C61FE4A4000072E2BF /* NetworkSentiment.swift */; };
 		06A588451FE468FE0060E4A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A588441FE468FE0060E4A6 /* AppDelegate.swift */; };
 		06A588471FE468FE0060E4A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A588461FE468FE0060E4A6 /* ViewController.swift */; };
 		06A5884A1FE468FE0060E4A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A588481FE468FE0060E4A6 /* Main.storyboard */; };
@@ -34,10 +37,13 @@
 
 /* Begin PBXFileReference section */
 		0641E1B21FE483BB0072E2BF /* Sentiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentiment.swift; sourceTree = "<group>"; };
-		0641E1B41FE485360072E2BF /* GoogleSentiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSentiment.swift; sourceTree = "<group>"; };
+		0641E1B41FE485360072E2BF /* Analysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analysis.swift; sourceTree = "<group>"; };
 		0641E1B61FE486310072E2BF /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		0641E1B81FE498590072E2BF /* Secured.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Secured.plist; sourceTree = "<group>"; };
 		0641E1BA1FE49DAB0072E2BF /* RouterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterError.swift; sourceTree = "<group>"; };
+		0641E1BD1FE49F050072E2BF /* GAClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAClientManager.swift; sourceTree = "<group>"; };
+		0641E1C41FE4A3B80072E2BF /* NetworkAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAnalysis.swift; sourceTree = "<group>"; };
+		0641E1C61FE4A4000072E2BF /* NetworkSentiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSentiment.swift; sourceTree = "<group>"; };
 		06A588411FE468FD0060E4A6 /* TextAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06A588441FE468FE0060E4A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06A588461FE468FE0060E4A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				0641E1BC1FE49DFE0072E2BF /* Router */,
+				0641E1BD1FE49F050072E2BF /* GAClientManager.swift */,
 			);
 			path = GoogleAnalyzerClient;
 			sourceTree = "<group>";
@@ -87,8 +94,9 @@
 		0641E1B11FE483960072E2BF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0641E1B21FE483BB0072E2BF /* Sentiment.swift */,
-				0641E1B41FE485360072E2BF /* GoogleSentiment.swift */,
+				0641E1BF1FE4A2610072E2BF /* Protocols */,
+				0641E1C41FE4A3B80072E2BF /* NetworkAnalysis.swift */,
+				0641E1C61FE4A4000072E2BF /* NetworkSentiment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -100,6 +108,15 @@
 				0641E1BA1FE49DAB0072E2BF /* RouterError.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		0641E1BF1FE4A2610072E2BF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0641E1B21FE483BB0072E2BF /* Sentiment.swift */,
+				0641E1B41FE485360072E2BF /* Analysis.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		06A588381FE468FD0060E4A6 = {
@@ -397,11 +414,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0641E1B51FE485360072E2BF /* GoogleSentiment.swift in Sources */,
+				0641E1B51FE485360072E2BF /* Analysis.swift in Sources */,
+				0641E1BE1FE49F050072E2BF /* GAClientManager.swift in Sources */,
 				06A588471FE468FE0060E4A6 /* ViewController.swift in Sources */,
 				0641E1B71FE486310072E2BF /* Router.swift in Sources */,
 				06A588451FE468FE0060E4A6 /* AppDelegate.swift in Sources */,
+				0641E1C71FE4A4000072E2BF /* NetworkSentiment.swift in Sources */,
 				0641E1B31FE483BB0072E2BF /* Sentiment.swift in Sources */,
+				0641E1C51FE4A3B80072E2BF /* NetworkAnalysis.swift in Sources */,
 				0641E1BB1FE49DAB0072E2BF /* RouterError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
