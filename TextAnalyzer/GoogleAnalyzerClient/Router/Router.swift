@@ -12,7 +12,7 @@ import Alamofire
 enum Router {
   
   // Use cases
-  case analyze(text: String)
+  case analyze(String)
   
   // Route Properties
   var method: HTTPMethod {
@@ -23,10 +23,7 @@ enum Router {
   }
   
   var baseURL: URL? {
-    guard let path = Bundle.main.url(
-      forResource: "Secured",
-      withExtension: "plist",
-      subdirectory: "Supporting Files"),
+    guard let path = Bundle.main.url(forResource: "Secured", withExtension: "plist"),
       let dictionaryList = NSDictionary(contentsOf: path) as? [String: String],
       let key = dictionaryList["apiKey"] else {
         return nil
