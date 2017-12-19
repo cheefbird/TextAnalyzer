@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0623C3571FE89AD500EDEF85 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0623C3561FE89AD500EDEF85 /* CustomButton.swift */; };
+		0623C3601FE89DC300EDEF85 /* HomeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0623C35A1FE89DC300EDEF85 /* HomeViewPresenter.swift */; };
+		0623C3621FE89DC300EDEF85 /* HomeViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0623C35C1FE89DC300EDEF85 /* HomeViewRouter.swift */; };
+		0623C3631FE89DC300EDEF85 /* HomeViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0623C35D1FE89DC300EDEF85 /* HomeViewModels.swift */; };
+		0623C3641FE89DC300EDEF85 /* HomeViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0623C35E1FE89DC300EDEF85 /* HomeViewViewController.swift */; };
+		0623C3651FE89DC300EDEF85 /* HomeViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0623C35F1FE89DC300EDEF85 /* HomeViewInteractor.swift */; };
 		0641E1B31FE483BB0072E2BF /* Sentiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641E1B21FE483BB0072E2BF /* Sentiment.swift */; };
 		0641E1B51FE485360072E2BF /* Analysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641E1B41FE485360072E2BF /* Analysis.swift */; };
 		0641E1B71FE486310072E2BF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641E1B61FE486310072E2BF /* Router.swift */; };
@@ -37,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0623C3561FE89AD500EDEF85 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		0623C35A1FE89DC300EDEF85 /* HomeViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPresenter.swift; sourceTree = "<group>"; };
+		0623C35C1FE89DC300EDEF85 /* HomeViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRouter.swift; sourceTree = "<group>"; };
+		0623C35D1FE89DC300EDEF85 /* HomeViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModels.swift; sourceTree = "<group>"; };
+		0623C35E1FE89DC300EDEF85 /* HomeViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewViewController.swift; sourceTree = "<group>"; };
+		0623C35F1FE89DC300EDEF85 /* HomeViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewInteractor.swift; sourceTree = "<group>"; };
 		0641E1B21FE483BB0072E2BF /* Sentiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentiment.swift; sourceTree = "<group>"; };
 		0641E1B41FE485360072E2BF /* Analysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analysis.swift; sourceTree = "<group>"; };
 		0641E1B61FE486310072E2BF /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -84,6 +96,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0623C3551FE89AAC00EDEF85 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0623C3561FE89AD500EDEF85 /* CustomButton.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0623C3581FE89D8700EDEF85 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0623C3591FE89D9200EDEF85 /* HomeView */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		0623C3591FE89D9200EDEF85 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				0623C35D1FE89DC300EDEF85 /* HomeViewModels.swift */,
+				0623C35E1FE89DC300EDEF85 /* HomeViewViewController.swift */,
+				0623C35F1FE89DC300EDEF85 /* HomeViewInteractor.swift */,
+				0623C35A1FE89DC300EDEF85 /* HomeViewPresenter.swift */,
+				0623C35C1FE89DC300EDEF85 /* HomeViewRouter.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
 		0641E1B01FE483520072E2BF /* GoogleAnalyzerClient */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,7 +185,9 @@
 		06A588431FE468FD0060E4A6 /* TextAnalyzer */ = {
 			isa = PBXGroup;
 			children = (
+				0623C3551FE89AAC00EDEF85 /* Helpers */,
 				0641E1B11FE483960072E2BF /* Models */,
+				0623C3581FE89D8700EDEF85 /* Scenes */,
 				0641E1B01FE483520072E2BF /* GoogleAnalyzerClient */,
 				06A588441FE468FE0060E4A6 /* AppDelegate.swift */,
 				06A588461FE468FE0060E4A6 /* ViewController.swift */,
@@ -417,15 +459,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0623C3631FE89DC300EDEF85 /* HomeViewModels.swift in Sources */,
 				0641E1B51FE485360072E2BF /* Analysis.swift in Sources */,
 				0641E1BE1FE49F050072E2BF /* GAClientManager.swift in Sources */,
 				06A588471FE468FE0060E4A6 /* ViewController.swift in Sources */,
 				0641E1B71FE486310072E2BF /* Router.swift in Sources */,
 				06A588451FE468FE0060E4A6 /* AppDelegate.swift in Sources */,
+				0623C3621FE89DC300EDEF85 /* HomeViewRouter.swift in Sources */,
 				0641E1C71FE4A4000072E2BF /* NetworkSentiment.swift in Sources */,
 				0641E1B31FE483BB0072E2BF /* Sentiment.swift in Sources */,
+				0623C3641FE89DC300EDEF85 /* HomeViewViewController.swift in Sources */,
+				0623C3571FE89AD500EDEF85 /* CustomButton.swift in Sources */,
+				0623C3651FE89DC300EDEF85 /* HomeViewInteractor.swift in Sources */,
 				0641E1C51FE4A3B80072E2BF /* NetworkAnalysis.swift in Sources */,
 				0641E1BB1FE49DAB0072E2BF /* RouterError.swift in Sources */,
+				0623C3601FE89DC300EDEF85 /* HomeViewPresenter.swift in Sources */,
 				0641E1C91FE4A97C0072E2BF /* GAClientManagerError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
