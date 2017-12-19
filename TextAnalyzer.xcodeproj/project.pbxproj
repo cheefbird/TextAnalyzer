@@ -13,6 +13,7 @@
 		0623C3631FE89DC300EDEF85 /* HomeViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0623C35D1FE89DC300EDEF85 /* HomeViewModels.swift */; };
 		0623C3641FE89DC300EDEF85 /* HomeViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0623C35E1FE89DC300EDEF85 /* HomeViewViewController.swift */; };
 		0623C3651FE89DC300EDEF85 /* HomeViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0623C35F1FE89DC300EDEF85 /* HomeViewInteractor.swift */; };
+		062603DD1FE8B0CC00B691F8 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062603DC1FE8B0CC00B691F8 /* OverlayView.swift */; };
 		0641E1B31FE483BB0072E2BF /* Sentiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641E1B21FE483BB0072E2BF /* Sentiment.swift */; };
 		0641E1B51FE485360072E2BF /* Analysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641E1B41FE485360072E2BF /* Analysis.swift */; };
 		0641E1B71FE486310072E2BF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641E1B61FE486310072E2BF /* Router.swift */; };
@@ -49,6 +50,7 @@
 		0623C35D1FE89DC300EDEF85 /* HomeViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModels.swift; sourceTree = "<group>"; };
 		0623C35E1FE89DC300EDEF85 /* HomeViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewViewController.swift; sourceTree = "<group>"; };
 		0623C35F1FE89DC300EDEF85 /* HomeViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewInteractor.swift; sourceTree = "<group>"; };
+		062603DC1FE8B0CC00B691F8 /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 		0641E1B21FE483BB0072E2BF /* Sentiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentiment.swift; sourceTree = "<group>"; };
 		0641E1B41FE485360072E2BF /* Analysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analysis.swift; sourceTree = "<group>"; };
 		0641E1B61FE486310072E2BF /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				0623C3561FE89AD500EDEF85 /* CustomButton.swift */,
+				062603DC1FE8B0CC00B691F8 /* OverlayView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -440,11 +443,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TextAnalyzer/Pods-TextAnalyzer-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +471,7 @@
 				0641E1B71FE486310072E2BF /* Router.swift in Sources */,
 				06A588451FE468FE0060E4A6 /* AppDelegate.swift in Sources */,
 				0623C3621FE89DC300EDEF85 /* HomeViewRouter.swift in Sources */,
+				062603DD1FE8B0CC00B691F8 /* OverlayView.swift in Sources */,
 				0641E1C71FE4A4000072E2BF /* NetworkSentiment.swift in Sources */,
 				0641E1B31FE483BB0072E2BF /* Sentiment.swift in Sources */,
 				0623C3641FE89DC300EDEF85 /* HomeViewViewController.swift in Sources */,

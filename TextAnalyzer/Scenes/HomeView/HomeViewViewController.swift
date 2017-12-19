@@ -11,6 +11,7 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
 protocol HomeViewDisplayLogic: class {
   func displaySomething(viewModel: HomeView.AnalyzeText.ViewModel)
@@ -70,13 +71,13 @@ class HomeViewViewController: UIViewController, HomeViewDisplayLogic {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    doSomething()
+    
   }
   
   // MARK: - Analyze Text
   
   @IBAction func analyzeText() {
-    
+    showLoadingView()
   }
   
   //@IBOutlet weak var nameTextField: UITextField!
@@ -88,5 +89,9 @@ class HomeViewViewController: UIViewController, HomeViewDisplayLogic {
   
   func displaySomething(viewModel: HomeView.AnalyzeText.ViewModel) {
     //nameTextField.text = viewModel.name
+  }
+  
+  private func showLoadingView() {
+    
   }
 }
