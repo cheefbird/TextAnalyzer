@@ -108,6 +108,7 @@
 		0623C3581FE89D8700EDEF85 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				06BA39E41FEA16200024DBED /* ShowAnalysis */,
 				0623C3591FE89D9200EDEF85 /* HomeView */,
 			);
 			path = Scenes;
@@ -204,6 +205,13 @@
 				06A5885B1FE468FE0060E4A6 /* Info.plist */,
 			);
 			path = TextAnalyzerTests;
+			sourceTree = "<group>";
+		};
+		06BA39E41FEA16200024DBED /* ShowAnalysis */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ShowAnalysis;
 			sourceTree = "<group>";
 		};
 		06C8C12D1FE47994002E5DD3 /* Storyboards */ = {
