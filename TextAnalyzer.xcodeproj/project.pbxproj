@@ -24,7 +24,6 @@
 		0641E1C71FE4A4000072E2BF /* NetworkSentiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641E1C61FE4A4000072E2BF /* NetworkSentiment.swift */; };
 		0641E1C91FE4A97C0072E2BF /* GAClientManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641E1C81FE4A97C0072E2BF /* GAClientManagerError.swift */; };
 		06A588451FE468FE0060E4A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A588441FE468FE0060E4A6 /* AppDelegate.swift */; };
-		06A588471FE468FE0060E4A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A588461FE468FE0060E4A6 /* ViewController.swift */; };
 		06A5884A1FE468FE0060E4A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A588481FE468FE0060E4A6 /* Main.storyboard */; };
 		06A5884C1FE468FE0060E4A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06A5884B1FE468FE0060E4A6 /* Assets.xcassets */; };
 		06A5884F1FE468FE0060E4A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A5884D1FE468FE0060E4A6 /* LaunchScreen.storyboard */; };
@@ -62,7 +61,6 @@
 		0641E1C81FE4A97C0072E2BF /* GAClientManagerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAClientManagerError.swift; sourceTree = "<group>"; };
 		06A588411FE468FD0060E4A6 /* TextAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06A588441FE468FE0060E4A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		06A588461FE468FE0060E4A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		06A588491FE468FE0060E4A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		06A5884B1FE468FE0060E4A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06A5884E1FE468FE0060E4A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -188,12 +186,11 @@
 		06A588431FE468FD0060E4A6 /* TextAnalyzer */ = {
 			isa = PBXGroup;
 			children = (
+				06A588441FE468FE0060E4A6 /* AppDelegate.swift */,
 				0623C3551FE89AAC00EDEF85 /* Helpers */,
 				0641E1B11FE483960072E2BF /* Models */,
-				0623C3581FE89D8700EDEF85 /* Scenes */,
 				0641E1B01FE483520072E2BF /* GoogleAnalyzerClient */,
-				06A588441FE468FE0060E4A6 /* AppDelegate.swift */,
-				06A588461FE468FE0060E4A6 /* ViewController.swift */,
+				0623C3581FE89D8700EDEF85 /* Scenes */,
 				06C8C12D1FE47994002E5DD3 /* Storyboards */,
 				06C8C12E1FE479A2002E5DD3 /* Supporting Files */,
 			);
@@ -467,7 +464,6 @@
 				0623C3631FE89DC300EDEF85 /* HomeViewModels.swift in Sources */,
 				0641E1B51FE485360072E2BF /* Analysis.swift in Sources */,
 				0641E1BE1FE49F050072E2BF /* GAClientManager.swift in Sources */,
-				06A588471FE468FE0060E4A6 /* ViewController.swift in Sources */,
 				0641E1B71FE486310072E2BF /* Router.swift in Sources */,
 				06A588451FE468FE0060E4A6 /* AppDelegate.swift in Sources */,
 				0623C3621FE89DC300EDEF85 /* HomeViewRouter.swift in Sources */,

@@ -13,7 +13,7 @@
 import UIKit
 
 protocol HomeViewPresentationLogic {
-  func presentSomething(response: HomeView.AnalyzeText.Response)
+  func presentAnalysis(response: HomeView.AnalyzeText.Response)
 }
 
 class HomeViewPresenter: HomeViewPresentationLogic {
@@ -21,8 +21,14 @@ class HomeViewPresenter: HomeViewPresentationLogic {
   
   // MARK: Do something
   
-  func presentSomething(response: HomeView.AnalyzeText.Response) {
-    let viewModel = HomeView.AnalyzeText.ViewModel()
-    viewController?.displaySomething(viewModel: viewModel)
+//  func presentSomething(response: HomeView.AnalyzeText.Response) {
+////    let viewModel = HomeView.AnalyzeText.ViewModel()
+////    viewController?.displaySomething(viewModel: viewModel)
+//  }
+  
+  func presentAnalysis(response: HomeView.AnalyzeText.Response) {
+    let viewModel = HomeView.AnalyzeText.ViewModel(analysis: response.analysis)
+    viewController?.displayAnalysis(viewModel: viewModel)
   }
+  
 }

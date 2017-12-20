@@ -17,13 +17,13 @@ enum HomeView {
   
   enum AnalyzeText {
     struct Request {
-      
+      var text: String
     }
     struct Response {
-      
+      var analysis: Analysis
     }
     struct ViewModel {
-      
+      var analysis: Analysis
     }
   }
 }

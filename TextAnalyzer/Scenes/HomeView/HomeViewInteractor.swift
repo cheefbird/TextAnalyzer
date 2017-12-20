@@ -13,7 +13,7 @@
 import UIKit
 
 protocol HomeViewBusinessLogic {
-  func doSomething(request: HomeView.AnalyzeText.Request)
+  func analyzeSentiment(request: HomeView.AnalyzeText.Request)
 }
 
 protocol HomeViewDataStore {
@@ -27,11 +27,15 @@ class HomeViewInteractor: HomeViewBusinessLogic, HomeViewDataStore {
   
   // MARK: Do something
   
-  func doSomething(request: HomeView.AnalyzeText.Request) {
-//    worker = HomeViewWorker()
-//    worker?.doSomeWork()
-    
-    let response = HomeView.AnalyzeText.Response()
-    presenter?.presentSomething(response: response)
+  func analyzeSentiment(request: HomeView.AnalyzeText.Request) {
+    GAClientManager.shared.fetchAnalysis(forText: request.text) { result in
+      guard result.isSuccess, let analysis = result.value else {
+        print("FAIL: Text analysis failed")
+        return
+      }
+      
+      let response = HomeView.AnalyzeText.Response(analysis: analysis)
+      self.presenter?.presentAnalysis(response: response)
+    }
   }
 }

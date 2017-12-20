@@ -14,15 +14,18 @@ import UIKit
 import NVActivityIndicatorView
 
 protocol HomeViewDisplayLogic: class {
-  func displaySomething(viewModel: HomeView.AnalyzeText.ViewModel)
+  func displayAnalysis(viewModel: HomeView.AnalyzeText.ViewModel)
 }
 
 class HomeViewViewController: UIViewController, HomeViewDisplayLogic {
   
   // MARK: - Outlets
   
+  @IBOutlet var instructionLabel: UILabel!
   @IBOutlet var mainTextField: UITextField!
   @IBOutlet var analyzeButton: UIButton!
+  
+  @IBOutlet var spinnerView: NVActivityIndicatorView!
   
   // MARK: - Properties
   
@@ -72,26 +75,45 @@ class HomeViewViewController: UIViewController, HomeViewDisplayLogic {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    
   }
   
   // MARK: - Analyze Text
   
   @IBAction func analyzeText() {
-    showLoadingView()
+//    spinnerView.isAnimating ? spinnerView.stopAnimating() : spinnerView.startAnimating()
+    startAnalyzing()
   }
   
   //@IBOutlet weak var nameTextField: UITextField!
   
-  func doSomething() {
-    let request = HomeView.AnalyzeText.Request()
-    interactor?.doSomething(request: request)
-  }
-  
-  func displaySomething(viewModel: HomeView.AnalyzeText.ViewModel) {
-    //nameTextField.text = viewModel.name
-  }
-  
-  private func showLoadingView() {
+  func startAnalyzing() {
+    spinnerView.startAnimating()
     
+    guard let text = mainTextField.text, text.count > 0 else {
+      instructionLabel.text = "Invalid entry. Enter text to analyze..."
+      spinnerView.stopAnimating()
+      return
+    }
+    
+    let request = HomeView.AnalyzeText.Request(text: text)
+    interactor?.analyzeSentiment(request: request)
+  }
+  
+  func displayAnalysis(viewModel: HomeView.AnalyzeText.ViewModel) {
+    guard viewModel.analysis.sentences.count > 0 else {
+      spinnerView.stopAnimating()
+      instructionLabel.text = "Analysis doesn't look correct. Try again."
+      print("FAIL: Sentiment fetch didn't work.")
+      return
+    }
+    
+    spinnerView.stopAnimating()
+    instructionLabel.text = "Success! Ready to analyze again ..."
+    
+    print("Success! Overall: \(viewModel.analysis.overall)")
+    viewModel.analysis.sentences.forEach { sentence in
+      print("Success! sentence: \(sentence)")
+    }
   }
 }

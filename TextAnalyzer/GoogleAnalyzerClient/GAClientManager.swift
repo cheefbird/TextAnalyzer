@@ -20,7 +20,7 @@ class GAClientManager {
   // Methods
   
   func fetchAnalysis(forText text: String, completionHandler: @escaping (Result<Analysis>) -> Void) {
-
+    
     Alamofire.request(Router.analyze(text))
       .responseJSON { response in
         let result = self.parseAnalysis(from: response)
