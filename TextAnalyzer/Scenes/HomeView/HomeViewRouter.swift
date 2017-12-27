@@ -13,7 +13,7 @@
 import UIKit
 
 @objc protocol HomeViewRoutingLogic {
-  //func routeToSomewhere(segue: UIStoryboardSegue?)
+  func routeToShowAnalysis(segue: UIStoryboardSegue?)
 }
 
 protocol HomeViewDataPassing {
@@ -26,32 +26,44 @@ class HomeViewRouter: NSObject, HomeViewRoutingLogic, HomeViewDataPassing {
   
   // MARK: Routing
   
-  //func routeToSomewhere(segue: UIStoryboardSegue?)
-  //{
-  //  if let segue = segue {
-  //    let destinationVC = segue.destination as! SomewhereViewController
-  //    var destinationDS = destinationVC.router!.dataStore!
-  //    passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-  //  } else {
-  //    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-  //    let destinationVC = storyboard.instantiateViewController(withIdentifier: "SomewhereViewController") as! SomewhereViewController
-  //    var destinationDS = destinationVC.router!.dataStore!
-  //    passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-  //    navigateToSomewhere(source: viewController!, destination: destinationVC)
-  //  }
-  //}
+  func routeToShowAnalysis(segue: UIStoryboardSegue?) {
+
+    if let segue = segue {
+      let destinationVC = segue.destination as! ShowAnalysisViewController
+      var destinationDS = destinationVC.router!.dataStore!
+      passDataToShowAnalysis(source: dataStore!, destination: &destinationDS)
+    } else {
+      let storyboard = UIStoryboard(name: "Main", bundle: nil)
+      let destinationVC = storyboard.instantiateViewController(withIdentifier: "ShowAnalysisVC") as! ShowAnalysisViewController
+      var destinationDS = destinationVC.router!.dataStore!
+      passDataToShowAnalysis(source: dataStore!, destination: &destinationDS)
+      navigateToSomewhere(source: viewController!, destination: destinationVC)
+    }
+  }
+  
+//  func routeToSomewhere(segue: UIStoryboardSegue?) {
+//    if let segue = segue {
+//      let destinationVC = segue.destination as! SomewhereViewController
+//      var destinationDS = destinationVC.router!.dataStore!
+//      passDataToSomewhere(source: dataStore!, destination: &destinationDS)
+//    } else {
+//      let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//      let destinationVC = storyboard.instantiateViewController(withIdentifier: "SomewhereViewController") as! SomewhereViewController
+//      var destinationDS = destinationVC.router!.dataStore!
+//      passDataToSomewhere(source: dataStore!, destination: &destinationDS)
+//      navigateToSomewhere(source: viewController!, destination: destinationVC)
+//    }
+//  }
 
   // MARK: Navigation
   
-  //func navigateToSomewhere(source: HomeViewViewController, destination: SomewhereViewController)
-  //{
-  //  source.show(destination, sender: nil)
-  //}
+  func navigateToSomewhere(source: HomeViewViewController, destination: ShowAnalysisViewController) {
+    source.show(destination, sender: nil)
+  }
   
   // MARK: Passing data
   
-  //func passDataToSomewhere(source: HomeViewDataStore, destination: inout SomewhereDataStore)
-  //{
-  //  destination.name = source.name
-  //}
+  func passDataToShowAnalysis(source: HomeViewDataStore, destination: inout ShowAnalysisDataStore) {
+    destination.analysis = source.analysis
+  }
 }

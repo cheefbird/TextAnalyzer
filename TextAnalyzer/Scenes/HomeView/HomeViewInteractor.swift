@@ -18,12 +18,12 @@ protocol HomeViewBusinessLogic {
 
 protocol HomeViewDataStore {
   //var name: String { get set }
+  var analysis: Analysis? { get set }
 }
 
 class HomeViewInteractor: HomeViewBusinessLogic, HomeViewDataStore {
   var presenter: HomeViewPresentationLogic?
-//  var worker: HomeViewWorker?
-  //var name: String = ""
+  var analysis: Analysis?
   
   // MARK: Do something
   
@@ -33,6 +33,8 @@ class HomeViewInteractor: HomeViewBusinessLogic, HomeViewDataStore {
         print("FAIL: Text analysis failed")
         return
       }
+      
+      self.analysis = analysis
       
       let response = HomeView.AnalyzeText.Response(analysis: analysis)
       self.presenter?.presentAnalysis(response: response)

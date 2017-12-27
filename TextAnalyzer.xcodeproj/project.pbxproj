@@ -28,6 +28,11 @@
 		06A5884C1FE468FE0060E4A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06A5884B1FE468FE0060E4A6 /* Assets.xcassets */; };
 		06A5884F1FE468FE0060E4A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A5884D1FE468FE0060E4A6 /* LaunchScreen.storyboard */; };
 		06A5885A1FE468FE0060E4A6 /* TextAnalyzerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A588591FE468FE0060E4A6 /* TextAnalyzerTests.swift */; };
+		06BA39EB1FEA1D4B0024DBED /* ShowAnalysisPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BA39E51FEA1D4B0024DBED /* ShowAnalysisPresenter.swift */; };
+		06BA39ED1FEA1D4B0024DBED /* ShowAnalysisRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BA39E71FEA1D4B0024DBED /* ShowAnalysisRouter.swift */; };
+		06BA39EE1FEA1D4B0024DBED /* ShowAnalysisModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BA39E81FEA1D4B0024DBED /* ShowAnalysisModels.swift */; };
+		06BA39EF1FEA1D4B0024DBED /* ShowAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BA39E91FEA1D4B0024DBED /* ShowAnalysisViewController.swift */; };
+		06BA39F01FEA1D4B0024DBED /* ShowAnalysisInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BA39EA1FEA1D4B0024DBED /* ShowAnalysisInteractor.swift */; };
 		3B071F8296836507B8A3F6DD /* Pods_TextAnalyzer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F36AF864D8D33FD550416B0 /* Pods_TextAnalyzer.framework */; };
 		6DF892A01240EAD6BE359D03 /* Pods_TextAnalyzerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5917BA43155FCD39143297E5 /* Pods_TextAnalyzerTests.framework */; };
 /* End PBXBuildFile section */
@@ -68,6 +73,11 @@
 		06A588551FE468FE0060E4A6 /* TextAnalyzerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextAnalyzerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06A588591FE468FE0060E4A6 /* TextAnalyzerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAnalyzerTests.swift; sourceTree = "<group>"; };
 		06A5885B1FE468FE0060E4A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06BA39E51FEA1D4B0024DBED /* ShowAnalysisPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAnalysisPresenter.swift; sourceTree = "<group>"; };
+		06BA39E71FEA1D4B0024DBED /* ShowAnalysisRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAnalysisRouter.swift; sourceTree = "<group>"; };
+		06BA39E81FEA1D4B0024DBED /* ShowAnalysisModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAnalysisModels.swift; sourceTree = "<group>"; };
+		06BA39E91FEA1D4B0024DBED /* ShowAnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAnalysisViewController.swift; sourceTree = "<group>"; };
+		06BA39EA1FEA1D4B0024DBED /* ShowAnalysisInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAnalysisInteractor.swift; sourceTree = "<group>"; };
 		5537D35F0A231EB394192B15 /* Pods-TextAnalyzer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextAnalyzer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextAnalyzer/Pods-TextAnalyzer.debug.xcconfig"; sourceTree = "<group>"; };
 		5917BA43155FCD39143297E5 /* Pods_TextAnalyzerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextAnalyzerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E872593E29D81086C51762F /* Pods-TextAnalyzerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextAnalyzerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextAnalyzerTests/Pods-TextAnalyzerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -210,6 +220,11 @@
 		06BA39E41FEA16200024DBED /* ShowAnalysis */ = {
 			isa = PBXGroup;
 			children = (
+				06BA39E81FEA1D4B0024DBED /* ShowAnalysisModels.swift */,
+				06BA39E91FEA1D4B0024DBED /* ShowAnalysisViewController.swift */,
+				06BA39EA1FEA1D4B0024DBED /* ShowAnalysisInteractor.swift */,
+				06BA39E51FEA1D4B0024DBED /* ShowAnalysisPresenter.swift */,
+				06BA39E71FEA1D4B0024DBED /* ShowAnalysisRouter.swift */,
 			);
 			path = ShowAnalysis;
 			sourceTree = "<group>";
@@ -470,15 +485,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				0623C3631FE89DC300EDEF85 /* HomeViewModels.swift in Sources */,
+				06BA39F01FEA1D4B0024DBED /* ShowAnalysisInteractor.swift in Sources */,
 				0641E1B51FE485360072E2BF /* Analysis.swift in Sources */,
 				0641E1BE1FE49F050072E2BF /* GAClientManager.swift in Sources */,
 				0641E1B71FE486310072E2BF /* Router.swift in Sources */,
 				06A588451FE468FE0060E4A6 /* AppDelegate.swift in Sources */,
 				0623C3621FE89DC300EDEF85 /* HomeViewRouter.swift in Sources */,
+				06BA39EB1FEA1D4B0024DBED /* ShowAnalysisPresenter.swift in Sources */,
 				062603DD1FE8B0CC00B691F8 /* OverlayView.swift in Sources */,
+				06BA39EE1FEA1D4B0024DBED /* ShowAnalysisModels.swift in Sources */,
 				0641E1C71FE4A4000072E2BF /* NetworkSentiment.swift in Sources */,
+				06BA39EF1FEA1D4B0024DBED /* ShowAnalysisViewController.swift in Sources */,
 				0641E1B31FE483BB0072E2BF /* Sentiment.swift in Sources */,
 				0623C3641FE89DC300EDEF85 /* HomeViewViewController.swift in Sources */,
+				06BA39ED1FEA1D4B0024DBED /* ShowAnalysisRouter.swift in Sources */,
 				0623C3571FE89AD500EDEF85 /* CustomButton.swift in Sources */,
 				0623C3651FE89DC300EDEF85 /* HomeViewInteractor.swift in Sources */,
 				0641E1C51FE4A3B80072E2BF /* NetworkAnalysis.swift in Sources */,

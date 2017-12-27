@@ -62,12 +62,21 @@ class HomeViewViewController: UIViewController, HomeViewDisplayLogic {
   // MARK: Routing
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if let scene = segue.identifier {
-      let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
-      if let router = router, router.responds(to: selector) {
-        router.perform(selector, with: segue)
-      }
+    guard segue.identifier == "ShowAnalysis",
+      let destinationVC = segue.destination as? ShowAnalysisViewController else { return }
+    
+    let route = NSSelectorFromString("routeToShowAnalysisWithSegue:")
+    
+    if let router = router, router.responds(to: route) {
+      router.perform(route, with: segue)
     }
+    
+    //    if let scene = segue.identifier {
+    //      let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
+    //      if let router = router, router.responds(to: selector) {
+    //        router.perform(selector, with: segue)
+    //      }
+    //    }
   }
   
   // MARK: View lifecycle
@@ -81,7 +90,7 @@ class HomeViewViewController: UIViewController, HomeViewDisplayLogic {
   // MARK: - Analyze Text
   
   @IBAction func analyzeText() {
-//    spinnerView.isAnimating ? spinnerView.stopAnimating() : spinnerView.startAnimating()
+    //    spinnerView.isAnimating ? spinnerView.stopAnimating() : spinnerView.startAnimating()
     startAnalyzing()
   }
   
@@ -108,12 +117,22 @@ class HomeViewViewController: UIViewController, HomeViewDisplayLogic {
       return
     }
     
-    spinnerView.stopAnimating()
-    instructionLabel.text = "Success! Ready to analyze again ..."
+    instructionLabel.text = "Success! Preparing analysis ..."
     
+    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+      self.spinnerView.stopAnimating()
+      self.performSegue(withIdentifier: "ShowAnalysis", sender: nil)
+    }
+    
+    // Print analysis to console -- REPLACE THIS
     print("Success! Overall: \(viewModel.analysis.overall)")
     viewModel.analysis.sentences.forEach { sentence in
       print("Success! sentence: \(sentence)")
     }
   }
+  
+  //  func showResults(results: Analysis) {
+  //    guard let router = router else { return }
+  //    router.r
+  //  }
 }
