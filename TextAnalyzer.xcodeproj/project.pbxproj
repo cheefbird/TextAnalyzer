@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0622711C200DED13004B502F /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0622711B200DED13004B502F /* XibView.swift */; };
+		0622711F200DEEF3004B502F /* SentimentScoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0622711E200DEEF3004B502F /* SentimentScoreView.xib */; };
 		0623C3571FE89AD500EDEF85 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0623C3561FE89AD500EDEF85 /* CustomButton.swift */; };
 		0623C3601FE89DC300EDEF85 /* HomeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0623C35A1FE89DC300EDEF85 /* HomeViewPresenter.swift */; };
 		0623C3621FE89DC300EDEF85 /* HomeViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0623C35C1FE89DC300EDEF85 /* HomeViewRouter.swift */; };
@@ -48,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0622711B200DED13004B502F /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
+		0622711E200DEEF3004B502F /* SentimentScoreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SentimentScoreView.xib; sourceTree = "<group>"; };
 		0623C3561FE89AD500EDEF85 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		0623C35A1FE89DC300EDEF85 /* HomeViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPresenter.swift; sourceTree = "<group>"; };
 		0623C35C1FE89DC300EDEF85 /* HomeViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRouter.swift; sourceTree = "<group>"; };
@@ -106,11 +110,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0622711D200DEE13004B502F /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				0622711E200DEEF3004B502F /* SentimentScoreView.xib */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
 		0623C3551FE89AAC00EDEF85 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				0623C3561FE89AD500EDEF85 /* CustomButton.swift */,
 				062603DC1FE8B0CC00B691F8 /* OverlayView.swift */,
+				0622711B200DED13004B502F /* XibView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -197,6 +210,7 @@
 		06A588431FE468FD0060E4A6 /* TextAnalyzer */ = {
 			isa = PBXGroup;
 			children = (
+				0622711D200DEE13004B502F /* XIB */,
 				06A588441FE468FE0060E4A6 /* AppDelegate.swift */,
 				0623C3551FE89AAC00EDEF85 /* Helpers */,
 				0641E1B11FE483960072E2BF /* Models */,
@@ -359,6 +373,7 @@
 			files = (
 				06A5884F1FE468FE0060E4A6 /* LaunchScreen.storyboard in Resources */,
 				06A5884C1FE468FE0060E4A6 /* Assets.xcassets in Resources */,
+				0622711F200DEEF3004B502F /* SentimentScoreView.xib in Resources */,
 				0641E1B91FE498590072E2BF /* Secured.plist in Resources */,
 				06A5884A1FE468FE0060E4A6 /* Main.storyboard in Resources */,
 			);
@@ -502,6 +517,7 @@
 				0623C3571FE89AD500EDEF85 /* CustomButton.swift in Sources */,
 				0623C3651FE89DC300EDEF85 /* HomeViewInteractor.swift in Sources */,
 				0641E1C51FE4A3B80072E2BF /* NetworkAnalysis.swift in Sources */,
+				0622711C200DED13004B502F /* XibView.swift in Sources */,
 				0641E1BB1FE49DAB0072E2BF /* RouterError.swift in Sources */,
 				0623C3601FE89DC300EDEF85 /* HomeViewPresenter.swift in Sources */,
 				0641E1C91FE4A97C0072E2BF /* GAClientManagerError.swift in Sources */,
