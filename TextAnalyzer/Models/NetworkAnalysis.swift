@@ -9,6 +9,7 @@
 import Foundation
 
 struct NetworkAnalysis: Analysis {
+  var text: String
   var overall: Sentiment
   var sentences: [Sentiment]
 }

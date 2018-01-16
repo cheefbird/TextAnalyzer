@@ -88,6 +88,7 @@ class ShowAnalysisViewController: UIViewController, ShowAnalysisDisplayLogic {
 //    analysisLabel.text = viewModel.analysis as! String
     
     var stringResult = "Overall: \n"
+    stringResult.append("Full text: \(String(describing: viewModel.analysis.text))\n")
     stringResult.append("Magnitude: \(String(viewModel.analysis.overall.magnitude))\n")
     stringResult.append("Score: \(String(viewModel.analysis.overall.score))\n\n")
     

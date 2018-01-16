@@ -9,6 +9,7 @@
 import Foundation
 
 protocol Analysis {
+  var text: String { get set }
   var overall: Sentiment { get set }
   var sentences: [Sentiment] { get set }
 }

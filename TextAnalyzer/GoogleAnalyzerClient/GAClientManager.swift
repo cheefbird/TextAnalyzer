@@ -23,12 +23,12 @@ class GAClientManager {
     
     Alamofire.request(Router.analyze(text))
       .responseJSON { response in
-        let result = self.parseAnalysis(from: response)
+        let result = self.parseAnalysis(forText: text, from: response)
         completionHandler(result)
     }
   }
   
-  func parseAnalysis(from response: DataResponse<Any>) -> Result<Analysis> {
+  func parseAnalysis(forText text: String, from response: DataResponse<Any>) -> Result<Analysis> {
     guard response.result.error == nil else {
       print(response.result.error!)
       return .failure(GAClientManagerError.invalidRequest)
@@ -53,7 +53,7 @@ class GAClientManager {
       allSentences.append(analyzedSentence)
     }
     
-    let finalAnalysis = NetworkAnalysis(overall: documentSentiment, sentences: allSentences)
+    let finalAnalysis = NetworkAnalysis(text: text, overall: documentSentiment, sentences: allSentences)
     
     return .success(finalAnalysis)
   }
