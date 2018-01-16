@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0623C3571FE89AD500EDEF85 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0623C3561FE89AD500EDEF85 /* CustomButton.swift */; };
+		0623C3601FE89DC300EDEF85 /* HomeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0623C35A1FE89DC300EDEF85 /* HomeViewPresenter.swift */; };
+		0623C3621FE89DC300EDEF85 /* HomeViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0623C35C1FE89DC300EDEF85 /* HomeViewRouter.swift */; };
+		0623C3631FE89DC300EDEF85 /* HomeViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0623C35D1FE89DC300EDEF85 /* HomeViewModels.swift */; };
+		0623C3641FE89DC300EDEF85 /* HomeViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0623C35E1FE89DC300EDEF85 /* HomeViewViewController.swift */; };
+		0623C3651FE89DC300EDEF85 /* HomeViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0623C35F1FE89DC300EDEF85 /* HomeViewInteractor.swift */; };
+		062603DD1FE8B0CC00B691F8 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062603DC1FE8B0CC00B691F8 /* OverlayView.swift */; };
 		0641E1B31FE483BB0072E2BF /* Sentiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641E1B21FE483BB0072E2BF /* Sentiment.swift */; };
 		0641E1B51FE485360072E2BF /* Analysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641E1B41FE485360072E2BF /* Analysis.swift */; };
 		0641E1B71FE486310072E2BF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641E1B61FE486310072E2BF /* Router.swift */; };
@@ -17,11 +24,15 @@
 		0641E1C71FE4A4000072E2BF /* NetworkSentiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641E1C61FE4A4000072E2BF /* NetworkSentiment.swift */; };
 		0641E1C91FE4A97C0072E2BF /* GAClientManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641E1C81FE4A97C0072E2BF /* GAClientManagerError.swift */; };
 		06A588451FE468FE0060E4A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A588441FE468FE0060E4A6 /* AppDelegate.swift */; };
-		06A588471FE468FE0060E4A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A588461FE468FE0060E4A6 /* ViewController.swift */; };
 		06A5884A1FE468FE0060E4A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A588481FE468FE0060E4A6 /* Main.storyboard */; };
 		06A5884C1FE468FE0060E4A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06A5884B1FE468FE0060E4A6 /* Assets.xcassets */; };
 		06A5884F1FE468FE0060E4A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A5884D1FE468FE0060E4A6 /* LaunchScreen.storyboard */; };
 		06A5885A1FE468FE0060E4A6 /* TextAnalyzerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A588591FE468FE0060E4A6 /* TextAnalyzerTests.swift */; };
+		06BA39EB1FEA1D4B0024DBED /* ShowAnalysisPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BA39E51FEA1D4B0024DBED /* ShowAnalysisPresenter.swift */; };
+		06BA39ED1FEA1D4B0024DBED /* ShowAnalysisRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BA39E71FEA1D4B0024DBED /* ShowAnalysisRouter.swift */; };
+		06BA39EE1FEA1D4B0024DBED /* ShowAnalysisModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BA39E81FEA1D4B0024DBED /* ShowAnalysisModels.swift */; };
+		06BA39EF1FEA1D4B0024DBED /* ShowAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BA39E91FEA1D4B0024DBED /* ShowAnalysisViewController.swift */; };
+		06BA39F01FEA1D4B0024DBED /* ShowAnalysisInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BA39EA1FEA1D4B0024DBED /* ShowAnalysisInteractor.swift */; };
 		3B071F8296836507B8A3F6DD /* Pods_TextAnalyzer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F36AF864D8D33FD550416B0 /* Pods_TextAnalyzer.framework */; };
 		6DF892A01240EAD6BE359D03 /* Pods_TextAnalyzerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5917BA43155FCD39143297E5 /* Pods_TextAnalyzerTests.framework */; };
 /* End PBXBuildFile section */
@@ -37,6 +48,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0623C3561FE89AD500EDEF85 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		0623C35A1FE89DC300EDEF85 /* HomeViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPresenter.swift; sourceTree = "<group>"; };
+		0623C35C1FE89DC300EDEF85 /* HomeViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRouter.swift; sourceTree = "<group>"; };
+		0623C35D1FE89DC300EDEF85 /* HomeViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModels.swift; sourceTree = "<group>"; };
+		0623C35E1FE89DC300EDEF85 /* HomeViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewViewController.swift; sourceTree = "<group>"; };
+		0623C35F1FE89DC300EDEF85 /* HomeViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewInteractor.swift; sourceTree = "<group>"; };
+		062603DC1FE8B0CC00B691F8 /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 		0641E1B21FE483BB0072E2BF /* Sentiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentiment.swift; sourceTree = "<group>"; };
 		0641E1B41FE485360072E2BF /* Analysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analysis.swift; sourceTree = "<group>"; };
 		0641E1B61FE486310072E2BF /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -48,7 +66,6 @@
 		0641E1C81FE4A97C0072E2BF /* GAClientManagerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAClientManagerError.swift; sourceTree = "<group>"; };
 		06A588411FE468FD0060E4A6 /* TextAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06A588441FE468FE0060E4A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		06A588461FE468FE0060E4A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		06A588491FE468FE0060E4A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		06A5884B1FE468FE0060E4A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06A5884E1FE468FE0060E4A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +73,11 @@
 		06A588551FE468FE0060E4A6 /* TextAnalyzerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextAnalyzerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06A588591FE468FE0060E4A6 /* TextAnalyzerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAnalyzerTests.swift; sourceTree = "<group>"; };
 		06A5885B1FE468FE0060E4A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06BA39E51FEA1D4B0024DBED /* ShowAnalysisPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAnalysisPresenter.swift; sourceTree = "<group>"; };
+		06BA39E71FEA1D4B0024DBED /* ShowAnalysisRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAnalysisRouter.swift; sourceTree = "<group>"; };
+		06BA39E81FEA1D4B0024DBED /* ShowAnalysisModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAnalysisModels.swift; sourceTree = "<group>"; };
+		06BA39E91FEA1D4B0024DBED /* ShowAnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAnalysisViewController.swift; sourceTree = "<group>"; };
+		06BA39EA1FEA1D4B0024DBED /* ShowAnalysisInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAnalysisInteractor.swift; sourceTree = "<group>"; };
 		5537D35F0A231EB394192B15 /* Pods-TextAnalyzer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextAnalyzer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextAnalyzer/Pods-TextAnalyzer.debug.xcconfig"; sourceTree = "<group>"; };
 		5917BA43155FCD39143297E5 /* Pods_TextAnalyzerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextAnalyzerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E872593E29D81086C51762F /* Pods-TextAnalyzerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextAnalyzerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextAnalyzerTests/Pods-TextAnalyzerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,6 +106,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0623C3551FE89AAC00EDEF85 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0623C3561FE89AD500EDEF85 /* CustomButton.swift */,
+				062603DC1FE8B0CC00B691F8 /* OverlayView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0623C3581FE89D8700EDEF85 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				06BA39E41FEA16200024DBED /* ShowAnalysis */,
+				0623C3591FE89D9200EDEF85 /* HomeView */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		0623C3591FE89D9200EDEF85 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				0623C35D1FE89DC300EDEF85 /* HomeViewModels.swift */,
+				0623C35E1FE89DC300EDEF85 /* HomeViewViewController.swift */,
+				0623C35F1FE89DC300EDEF85 /* HomeViewInteractor.swift */,
+				0623C35A1FE89DC300EDEF85 /* HomeViewPresenter.swift */,
+				0623C35C1FE89DC300EDEF85 /* HomeViewRouter.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
 		0641E1B01FE483520072E2BF /* GoogleAnalyzerClient */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,10 +197,11 @@
 		06A588431FE468FD0060E4A6 /* TextAnalyzer */ = {
 			isa = PBXGroup;
 			children = (
+				06A588441FE468FE0060E4A6 /* AppDelegate.swift */,
+				0623C3551FE89AAC00EDEF85 /* Helpers */,
 				0641E1B11FE483960072E2BF /* Models */,
 				0641E1B01FE483520072E2BF /* GoogleAnalyzerClient */,
-				06A588441FE468FE0060E4A6 /* AppDelegate.swift */,
-				06A588461FE468FE0060E4A6 /* ViewController.swift */,
+				0623C3581FE89D8700EDEF85 /* Scenes */,
 				06C8C12D1FE47994002E5DD3 /* Storyboards */,
 				06C8C12E1FE479A2002E5DD3 /* Supporting Files */,
 			);
@@ -162,6 +215,18 @@
 				06A5885B1FE468FE0060E4A6 /* Info.plist */,
 			);
 			path = TextAnalyzerTests;
+			sourceTree = "<group>";
+		};
+		06BA39E41FEA16200024DBED /* ShowAnalysis */ = {
+			isa = PBXGroup;
+			children = (
+				06BA39E81FEA1D4B0024DBED /* ShowAnalysisModels.swift */,
+				06BA39E91FEA1D4B0024DBED /* ShowAnalysisViewController.swift */,
+				06BA39EA1FEA1D4B0024DBED /* ShowAnalysisInteractor.swift */,
+				06BA39E51FEA1D4B0024DBED /* ShowAnalysisPresenter.swift */,
+				06BA39E71FEA1D4B0024DBED /* ShowAnalysisRouter.swift */,
+			);
+			path = ShowAnalysis;
 			sourceTree = "<group>";
 		};
 		06C8C12D1FE47994002E5DD3 /* Storyboards */ = {
@@ -398,11 +463,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TextAnalyzer/Pods-TextAnalyzer-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,15 +484,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0623C3631FE89DC300EDEF85 /* HomeViewModels.swift in Sources */,
+				06BA39F01FEA1D4B0024DBED /* ShowAnalysisInteractor.swift in Sources */,
 				0641E1B51FE485360072E2BF /* Analysis.swift in Sources */,
 				0641E1BE1FE49F050072E2BF /* GAClientManager.swift in Sources */,
-				06A588471FE468FE0060E4A6 /* ViewController.swift in Sources */,
 				0641E1B71FE486310072E2BF /* Router.swift in Sources */,
 				06A588451FE468FE0060E4A6 /* AppDelegate.swift in Sources */,
+				0623C3621FE89DC300EDEF85 /* HomeViewRouter.swift in Sources */,
+				06BA39EB1FEA1D4B0024DBED /* ShowAnalysisPresenter.swift in Sources */,
+				062603DD1FE8B0CC00B691F8 /* OverlayView.swift in Sources */,
+				06BA39EE1FEA1D4B0024DBED /* ShowAnalysisModels.swift in Sources */,
 				0641E1C71FE4A4000072E2BF /* NetworkSentiment.swift in Sources */,
+				06BA39EF1FEA1D4B0024DBED /* ShowAnalysisViewController.swift in Sources */,
 				0641E1B31FE483BB0072E2BF /* Sentiment.swift in Sources */,
+				0623C3641FE89DC300EDEF85 /* HomeViewViewController.swift in Sources */,
+				06BA39ED1FEA1D4B0024DBED /* ShowAnalysisRouter.swift in Sources */,
+				0623C3571FE89AD500EDEF85 /* CustomButton.swift in Sources */,
+				0623C3651FE89DC300EDEF85 /* HomeViewInteractor.swift in Sources */,
 				0641E1C51FE4A3B80072E2BF /* NetworkAnalysis.swift in Sources */,
 				0641E1BB1FE49DAB0072E2BF /* RouterError.swift in Sources */,
+				0623C3601FE89DC300EDEF85 /* HomeViewPresenter.swift in Sources */,
 				0641E1C91FE4A97C0072E2BF /* GAClientManagerError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

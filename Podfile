@@ -8,6 +8,7 @@ target 'TextAnalyzer' do
   # Pods for TextAnalyzer
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod 'NVActivityIndicatorView'
 
   target 'TextAnalyzerTests' do
     inherit! :search_paths
